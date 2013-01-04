@@ -61,6 +61,16 @@ describe StdioTrap do
         }
       }.should raise_error RuntimeError
     end
+
+    it "returns to_h" do
+      StdioTrap.trap!
+      puts "foo"
+      want = StdioTrap.to_h
+      got = StdioTrap.release!
+
+      got[:stdout].should == "foo\n"
+      want.should == got
+    end
   end
 
   describe 'trap!, release!' do

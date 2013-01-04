@@ -10,7 +10,7 @@ require 'stdiotrap'
 
 describe StdioTrap do
 
-  describe 'capture' do
+  describe 'Inline usage' do
     it "captures stdout and stderr" do
       trapped = StdioTrap.capture {
         $stdout.puts "Hello world!"
@@ -21,7 +21,7 @@ describe StdioTrap do
     end
   end
 
-  describe 'trap!, release!' do
+  describe 'Common rspec usage' do
     before :each do
       StdioTrap.trap!
     end

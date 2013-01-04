@@ -14,7 +14,9 @@ module StdioTrap
     def release!(force=false)
       raise RuntimeError, "Stdio is not currently trapped" if $stdio_trap.nil?
       raise RuntimeError, "Can not release inside capture{}" if $stdio_trap == :capture and !force
+      r = to_h
       $stdio_trap, $stdin, $stdout, $stderr = nil, $o_stdin, $o_stdout, $o_stderr
+      r
     end
 
     def status

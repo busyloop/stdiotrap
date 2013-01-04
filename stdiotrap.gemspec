@@ -10,7 +10,8 @@ Gem::Specification.new do |gem|
   gem.email         = ["moe@busyloop.net"]
   gem.description   = %q{Easily capture stdout, stderr at runtime}
   gem.summary       = %q{Easily capture stdout, stderr at runtime}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/busyloop/stdiotrap"
+  gem.has_rdoc      = false
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

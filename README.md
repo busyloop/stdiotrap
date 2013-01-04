@@ -6,6 +6,8 @@ e.g. for inspection inside a unit-test. It can also fake stdin.
 ## Example (rspec)
 
 ```ruby
+require 'stdiotrap'
+
 describe StdioTrap do
 
   describe 'capture' do

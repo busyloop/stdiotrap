@@ -13,7 +13,7 @@ describe StdioTrap do
   describe 'Inline usage' do
     it "captures stdout and stderr" do
       trapped = StdioTrap.capture {
-        $stdout.puts "Hello world!"
+        puts "Hello world!"
         $stderr.puts "Hello other world!"
       }
       trapped[:stdout].should == "Hello world!\n"

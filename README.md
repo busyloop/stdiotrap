@@ -1,4 +1,4 @@
-# StdioTrap [![Build Status](https://travis-ci.org/busyloop/stdiotrap.png?branch=master)](https://travis-ci.org/busyloop/stdiotrap) [![Dependency Status](https://gemnasium.com/busyloop/stdiotrap.png)](https://gemnasium.com/busyloop/stdiotrap)
+# StdioTrap [![Build Status](https://travis-ci.org/busyloop/stdiotrap.png?branch=master)](https://travis-ci.org/busyloop/stdiotrap) [![Dependency Status](https://gemnasium.com/busyloop/stdiotrap.png)](https://gemnasium.com/busyloop/stdiotrap) [![Gem Version](https://badge.fury.io/rb/stdiotrap.svg)](https://badge.fury.io/rb/stdiotrap)
 
 StdioTrap lets you capture stdout, stderr at runtime,
 e.g. for inspection inside a unit-test. It can also fake stdin.
